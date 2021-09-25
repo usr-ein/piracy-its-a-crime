@@ -1,0 +1,282 @@
+@font-face {
+    /* It took the help of Reddit and Vk.com to find the right font:
+    https://www.reddit.com/r/identifythisfont/comments/pv4tbw/this_is_from_the_famous_piracy_its_a_crimes_fake/
+    */
+    font-family: 'Serpentine Sans Oblique';
+    src: url('assets/SerpentineSansICG-Oblique.ttf') format("truetype");
+}
+
+h1.feature-films {
+    font-family: "Serpentine Sans Oblique", sans-serif;
+    font-weight: lighter;
+    font-size: max(2em, 7vw);
+    line-height: 1em;
+    letter-spacing: 0.05em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+h1.download-canceled {
+    color: #de2305;
+    font-family: Impact, sans-serif;
+    font-weight: bold;
+    font-size: max(2em, 6vw);
+    letter-spacing: -1px;
+    font-stretch: ultra-condensed;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.download-canceled-link {
+    text-decoration: none;
+}
+
+.blink {
+    animation: blinker 1s infinite step-end;
+}
+
+@keyframes blinker {
+    from { opacity: 1; }
+    50% { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    font-size: max(2.5vw, 1.7em);
+    font-weight: 1300;
+    margin: 20px 0 15px 0;
+    line-height: 0.6em;
+}
+
+h3 {
+    text-align: center;
+    font-weight: lighter;
+    margin: 9px 0 0 0;
+}
+
+h4 {
+    text-align: left;
+    font-weight: lighter;
+    font-style: italic;
+    margin: 0;
+    padding-left: 10px;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    /*min-width: 1290px;*/
+}
+
+.container-fluid > div > div {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+@media only screen and (max-width: 991px) {
+    .container-fluid > div > div {
+        margin-top: 10px;
+    }
+}
+
+.title-col {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+}
+
+.boxes-row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.hr-title {
+    border: 6px solid #0817bc;
+    margin-left: 0;
+}
+
+.hr-lg {
+    margin-top: 5px;
+    border-color: #0817bc;
+    width: 100%;
+}
+
+.hr-md {
+    border-color: #0d46ce;
+    width: 75%;
+}
+
+.hr-sm {
+    border-color: #0766c3;
+    width: 50%;
+}
+
+.new-releases {
+    background-color: #d08b00;
+    color: #000000;
+    padding: 2px 0;
+    text-align: center;
+}
+
+.hot-red-list {
+    background-color: #f52c01;
+    color: #000000;
+    width: 100%;
+    text-align: left;
+    padding: 5px 10%;
+    margin: 0;
+}
+
+.hot-red-list ul {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.celebrity-spotlight {
+    font-size: 1.2em;
+    text-align: start;
+    font-style: italic;
+    font-weight: bold;
+    padding: 5px 20px 0 20px;
+}
+
+.celebrity-spotlight-subtext {
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 1500;
+    padding: 2px 0;
+}
+
+.gray-middle {
+    background-color: #3F3F3F;
+    color: #FFFFFF;
+    font-size: 0.8em;
+}
+
+.gray-right {
+    background-color: #303030;
+    color: #FFFFFF;
+    font-size: 0.8em;
+}
+
+.gray-middle ol {
+    margin: 5px 0 4px 0;
+    padding-left: 15px;
+    font-size: 1.15em;
+    letter-spacing: 0.10em;
+    list-style: decimal inside none;
+}
+
+.gray-middle h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 0.2em;
+}
+
+.gray-right ul {
+    margin: 5px 0 5px 0;
+}
+
+.links-row {
+    margin-top: 10px;
+}
+
+#selected {
+    margin: 0;
+    padding: 0;
+    text-transform: lowercase;
+    font-size: 1.3em;
+    line-height: 1em;
+}
+
+.links-row a, .links-row a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.links-row a:visited, .links-row a:active, .links-row a:hover, .links-row a:focus, #selected {
+    color: #ffa600;
+}
+
+.links-row > div {
+    padding: 0 6px;
+}
+
+.progress-row {
+    margin: 60px 0;
+}
+
+.progress-bg {
+    background-color: #808080;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-fg {
+    background-color: #808080;
+    width: 100%;
+    height: 27px;
+    margin: 30px 10px;
+    box-shadow: inset -5px 5px 3px rgba(0, 0, 0, 0.6);
+    border-bottom: rgba(0, 0, 0, 0.3) solid 2px;
+    border-left: rgba(0, 0, 0, 0.3) solid 2px;
+    padding-top: 1px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0; /* This property is changed via CSS to change the bar. e.g. set it to 30% */
+    margin-left: -4px;
+    border-radius: 1px;
+    box-shadow: 3px 0 3px rgba(0, 0, 0, 0.4);
+    background: rgb(0, 165, 249);
+    background: -moz-linear-gradient(180deg, rgba(0, 165, 249, 1) 0%, rgba(1, 38, 63, 1) 75%, rgba(1, 38, 63, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0, 165, 249, 1) 0%, rgba(1, 38, 63, 1) 75%, rgba(1, 38, 63, 1) 100%);
+    background: linear-gradient(180deg, rgba(0, 165, 249, 1) 0%, rgba(1, 38, 63, 1) 75%, rgba(1, 38, 63, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00a5f9", endColorstr="#01263f", GradientType=1);
+
+    transition: width 2s;
+    transition-timing-function: linear; /* Linear transition makes it look more retro */
+}
+
+
+.download-btn {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 8px 12px;
+    background-color: #006D01;
+    color: #000000;
+    text-transform: uppercase;
+    box-shadow: inset 1px -1px 3px rgba(0, 0, 0, 0.9), inset 0 2px 2px rgba(255, 255, 255, 0.56);
+    border: none;
+    border-radius: 5px;
+}
+
+.download-btn:active {
+    box-shadow: inset 1px -1px 3px rgba(255, 255, 255, 0.56), inset 0 2px 2px rgba(0, 0, 0, 0.9);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #000000;
+}
+
+.text-muted {
+    color: #FFFFFF;
+}
+
+.full-view-height {
+    height: 100vh;
+}
